@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Martel', serif;
+}
+
+body {
+  background-color: #dbdbdb;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  background-color: #dbdbdb;
+}
+
+#header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0;
+  color: #4e0202;
+}
+
+#header .logo .company-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Berkshire Swash", cursive;
+}
+
+#header #nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5vw;
+}
+
+#header #nav-bar .nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.title {
+  display: table;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  padding: 25px 0 10px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.main-container #form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.main-container #form #email {
+  width: 300px;
+  height: 2rem;
+}
+
+.main-container #form #submit {
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  font-weight: 700;
+  height: 2rem;
+  box-shadow: 0 0 0 -10px black;
+  background-color: orangered;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-top: 50px;
+  max-width: 800px;
+}
+
+#features .features-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+#features .logos {
+  display: none;
+}
+
+#features .title {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+#features .text {
+  font-size: 1rem;
+}
+
+#video-container {
+  padding: 50px 0 50px;
+  width: calc(100px + 65vw);
+  height: calc(100px + 65vw);
+  max-width: 600px;
+  max-height: 500px;
+}
+
+#video-container #video {
+  height: 100%;
+  width: 100%;
+}
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  row-gap: 20px;
+  width: 100vw;
+}
+
+#pricing .prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid black;
+  width: 90vw;
+  max-width: 350px;
+  height: 270px;
+}
+
+#pricing .prices .product-name {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #727272;
+  height: 50px;
+  line-height: 50px;
+}
+
+#pricing .prices .price {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#pricing .prices .product-description {
+  padding: 0 50px;
+}
+
+#pricing .prices .buttons {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: none;
+  background-color: orangered;
+  border-radius: 5px;
+}
+
+#pricing .prices .buttons .select-btn {
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+footer {
+  background-color: grey;
+  margin-top: 20px;
+  color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
+
+footer .footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3%;
+}
+
+footer .footer-nav-items {
+  color: black;
+  text-decoration: none;
+}
+
+footer .copyrights {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    display: flex;
+  }
+  #header .logo {
+    padding: 10px 50px;
+  }
+  #header #nav-bar {
+    margin-left: auto;
+    margin-right: 5vw;
+  }
+  #features {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+  #features .logos-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: space-between;
+    padding: 20px 0 10px;
+  }
+  #features .logos-container .logos {
+    display: inline;
+    color: #f66c3a;
+  }
+  #features .features-container {
+    row-gap: 50px;
+  }
+  #features .features-container .title {
+    margin: 0;
+  }
+  #pricing {
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    padding: 0 5px;
+    width: 100vw;
+    max-width: 999px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

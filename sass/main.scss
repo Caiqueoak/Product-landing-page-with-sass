@@ -1,0 +1,247 @@
+@import "variables";
+
+// MOBILE RESOLUTION
+
+body {
+  background-color: $main-color;
+}
+
+// HEADER
+#header {
+  position: sticky;
+  top: 0;
+  background-color: $main-color;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 0;
+    color: rgb(78, 2, 2);
+
+    .company-name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      font-family: $brand-font;
+    }
+  }
+  #nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5vw;
+
+    .nav-link {
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+// TITLE
+.title {
+  display: table;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  padding: 25px 0 10px;
+  margin: 0 auto;
+}
+
+//MAIN CONTAINER
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+
+    #email {
+      width: 300px;
+      height: 2rem;
+    }
+    #submit {
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+      font-weight: 700;
+      height: 2rem;
+      box-shadow: 0 0 0 -10px black;
+      background-color: orangered;
+    }
+  }
+}
+
+// FEATURES
+#features {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-top: 50px;
+  max-width: 800px;
+
+  .features-container {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+  }
+  .logos {
+    display: none;
+  }
+  .title {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}
+
+// VIDEO
+#video-container {
+  padding: 50px 0 50px;
+  width: calc(100px + 65vw);
+  height: calc(100px + 65vw);
+  max-width: 600px;
+  max-height: 500px;
+
+  #video {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// PRICING
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  text-align: center;
+  row-gap: 20px;
+  width: 100vw;
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid black;
+    width: 90vw;
+    max-width: 350px;
+    height: 270px;
+
+    .product-name {
+      font-family: "Times New Roman", Times, serif;
+      background-color: rgb(114, 114, 114);
+      height: 50px;
+      line-height: 50px;
+    }
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .product-description {
+      padding: 0 50px;
+    }
+    .buttons {
+      width: 150px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      border: none;
+      background-color: orangered;
+      border-radius: 5px;
+
+      .select-btn {
+        color: black;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// FOOTER
+footer {
+  background-color: grey;
+  margin-top: 20px;
+  color: rgb(241, 241, 241);
+  width: 100%;
+  text-align: center;
+
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3%;
+
+    &-items {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  .copyrights {
+    font-size: 0.9rem;
+  }
+}
+
+// DESKTOP RESOLUTION
+
+@media screen and (min-width: 768px) {
+  // HEADER
+  #header {
+    display: flex;
+
+    .logo {
+      padding: 10px 50px;
+    }
+    #nav-bar {
+      margin-left: auto;
+      margin-right: 5vw;
+    }
+  }
+
+  // FEATURES
+  #features {
+    flex-direction: row;
+    column-gap: 30px;
+
+    .logos-container {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      justify-content: space-between;
+      padding: 20px 0 10px;
+
+      .logos {
+        display: inline;
+        color: rgb(246, 108, 58);
+      }
+    }
+    .features-container {
+      row-gap: 50px;
+
+      .title {
+        margin: 0;
+      }
+    }
+  }
+
+  // PRICING
+#pricing {
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    padding: 0 5px;
+    width: 100vw;
+    max-width: 999px;
+  }
+}
