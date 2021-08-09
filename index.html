@@ -16,7 +16,7 @@
     <!-- HEADER -->
     <header id="header">
         <label class="logo" for="">
-            <i class="fas fa-guitar fa-4x icon"></i>
+            <img id="header-img" src="https://www.freeiconspng.com/thumbs/guitar-icon-png/guitar-icon-png-30.png">
             <p for="" class="company-name">Oak Guitars</p>
         </label>
       <nav id="nav-bar">
@@ -30,14 +30,15 @@
     <!-- MAIN CONTAINER --> 
     <main class="main-container">
         <!-- FORM -->
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
             <input
             type="email"
             id="email"
+            name="email"
             placeholder="Enter your email"
             required
             />
-            <button type="submit" id="submit">GET STARTED</button>
+            <input type="submit" id="submit" value="GET STARTED">
         </form>
         <!-- FEATURE -->
         <section id="features">
